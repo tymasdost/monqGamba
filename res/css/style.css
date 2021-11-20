@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Major Mono Display", monospace;
+  user-select: none;
+}
+
+/* JS Zalezitosti :* */
+
+.moveUp {
+  animation: moveUp 2s forwards;
+}
+
+.mixRight {
+  animation: mixRight 5s;
+}
+.mixMiddle {
+  animation: mixMiddle 5s;
+}
+.mixLeft {
+  animation: mixLeft 5s;
+}
+
+
+@keyframes mixLeft {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 33.3%;
+  }
+  40% {
+    left: 66.6%;
+  }
+  60% {
+    left: 33.3%;
+  }
+  80% {
+    left: 66.3%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes mixMiddle {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  40% {
+    left: -33.3%;
+  }
+  60% {
+    left: 33.3%;
+  }
+  80% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+ 
+}
+@keyframes mixRight {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -33.3%;
+  }
+  40% {
+    left: -33.3%;
+  }
+  60% {
+    left: -66.6%;
+  }
+  80% {
+    left: -66.6%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes moveUp {
+  from {
+  }
+  to {
+    top: -15vh;
+  }
+}
+
+.left {
+  left: 13%;
+}
+.center {
+  left: 46%;
+}
+.right {
+  left: 79%;
+}
+
+/* JS Zalezitosti :* */
+
+body {
+  background-color: #171717;
+}
+
+#pogBall {
+  width: 8%;
+  position: absolute;
+  top: 46vh;
+  z-index: 1;
+}
+
+.madmonq {
+  z-index: 2;
+  cursor: pointer;
+  position: relative;
+  top: 0vh;
+  transition: 0.3s;
+}
+
+.wrap {
+  margin: 10% auto;
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+#start {
+  margin: 0 auto;
+  width: fit-content;
+  background: linear-gradient(
+    90deg,
+    rgba(105, 201, 208, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(238, 29, 82, 1) 100%
+  );
+  cursor: pointer;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+#correct {
+  margin: 20px auto;
+  width: fit-content;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 29, 82, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(105, 201, 208, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+#popup {
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.text {
+  font-size: 54px;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 29, 82, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(105, 201, 208, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
