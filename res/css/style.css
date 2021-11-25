@@ -182,7 +182,7 @@ body {
     rgba(255, 255, 255, 1) 50%,
     rgba(105, 201, 208, 1) 100%
   );
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
 }
