@@ -149,7 +149,7 @@ body {
 
 #correct {
   margin: 20px auto;
-  width: fit-content;
+  width: max-content;
   background: linear-gradient(
     90deg,
     rgba(238, 29, 82, 1) 0%,
